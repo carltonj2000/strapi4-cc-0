@@ -18,3 +18,9 @@ Need to finish the following tutorial for more details.
 The content of this repository is based on the
 [Strapi v4 Crash Course](https://youtu.be/vcopLqUq594)
 video.
+
+## Local Database
+
+The sqlite db is stored at `./.tmp/data.db`.
+My tutorial data is at
+`/media/renderws/carltonData/cj2022/code/strapi/strapi4-cc-0`.
