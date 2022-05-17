@@ -1,0 +1,212 @@
+[
+  {
+    "_id": "eb1aefd5-75d1-4cbf-a76a-91e655263551",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:1337/api/restaurants",
+    "url": "http://localhost:1337/api/restaurants",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:40:07.789Z",
+    "modified": "2022-05-17T00:40:07.860Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e4d30aeb-2985-4932-abdc-6a9802e47109",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:1337/api/restaurants?populate=openingHours",
+    "url": "http://localhost:1337/api/restaurants?populate=openingHours",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T00:42:08.753Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "populate",
+        "value": "openingHours",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "53e3529e-b1ae-4897-8db3-24d07722a8ee",
+    "colId": "history",
+    "containerId": "",
+    "name": "fields",
+    "url": "http://localhost:1337/api/restaurants?fields=name,publishedAt&populate=image",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T00:57:10.290Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "name,publishedAt",
+        "isPath": false
+      },
+      {
+        "name": "populate",
+        "value": "image",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "541645f6-7738-4225-ab09-6c3406624cc9",
+    "colId": "history",
+    "containerId": "",
+    "name": "categories",
+    "url": "http://localhost:1337/api/categories/1?fields=name&populate=restaurants",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T01:58:10.529Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "name",
+        "isPath": false
+      },
+      {
+        "name": "populate",
+        "value": "restaurants",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "443842ef-a2e7-4994-8162-e3b9f54c461d",
+    "colId": "history",
+    "containerId": "",
+    "name": "sort",
+    "url": "http://localhost:1337/api/categories?fields=name&sort=name:desc",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T02:01:38.967Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "name",
+        "isPath": false
+      },
+      {
+        "name": "sort",
+        "value": "name:desc",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "a8f1782d-91a8-4b86-949b-b90fc77215fd",
+    "colId": "history",
+    "containerId": "",
+    "name": "filter",
+    "url": "http://localhost:1337/api/restaurants?fields=name,avgPrice&filters[avgPrice][$lte]=30",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T02:08:22.623Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "fields",
+        "value": "name,avgPrice",
+        "isPath": false
+      },
+      {
+        "name": "filters[avgPrice][$lte]",
+        "value": "30",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "f918addc-ba21-4a8c-a864-b7ad3eb56ae3",
+    "colId": "history",
+    "containerId": "",
+    "name": "post review",
+    "url": "http://localhost:1337/api/reviews",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T03:01:33.052Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"data\": {\n        \"content\": \"This is a great restaurant\",\n        \"rating\": \"four\",\n        \"restaurant\": 3\n    }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4fe48839-73ee-4956-a1eb-4a1013a06557",
+    "colId": "history",
+    "containerId": "",
+    "name": "auth register",
+    "url": "http://localhost:1337/api/auth/local/register",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T03:12:53.037Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n\n        \"username\": \"Carlton Joseph\",\n        \"email\": \"carlton@carlton.com\",\n        \"password\": \"password!\"\n\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9e9e8fc0-55cd-4eae-8565-5bbd69d2453f",
+    "colId": "history",
+    "containerId": "",
+    "name": "auth post review",
+    "url": "http://localhost:1337/api/reviews",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-05-17T00:41:26.049Z",
+    "modified": "2022-05-17T03:17:16.351Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjUyNzU3MTczLCJleHAiOjE2NTUzNDkxNzN9.1nCylq5izlx0abIxmVIa-zR3vm4YxpG9BXsuvU-IBUU"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n    \"data\": {\n        \"content\": \"This is a great restaurant\",\n        \"rating\": \"four\",\n        \"restaurant\": 3\n    }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "947b3033-7d3b-4f5a-804d-af3d3c4b8c6d",
+    "colId": "history",
+    "containerId": "",
+    "name": "get images",
+    "url": "http://localhost:1337/uploads/281265984_5378500692180276_2500240649859795180_n_3208fe0aab.jpg",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-05-17T00:47:14.092Z",
+    "modified": "2022-05-17T00:48:23.638Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
